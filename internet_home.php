@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +6,8 @@
 <title>AdminLTE 3 | Dashboard 2</title>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-
 <link rel="stylesheet" href="adminLTE/plugins/fontawesome-free/css/all.min.css">
-
 <link rel="stylesheet" href="adminLTE/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-
 <link rel="stylesheet" href="adminLTE/dist/css/adminlte.min.css?v=3.2.0">
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -22,21 +18,19 @@
 </div>
 
 <nav class="main-header navbar navbar-expand navbar-dark">
-
 <ul class="navbar-nav">
 <li class="nav-item">
 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
 </li>
 <li class="nav-item d-none d-sm-inline-block">
-<a href="index3.html" class="nav-link">Home</a>
+<a href="index3.html" class="nav-link">Beranda</a>
 </li>
 <li class="nav-item d-none d-sm-inline-block">
-<a href="#" class="nav-link">Contact</a>
+<a href="#" class="nav-link">Kontak</a>
 </li>
 </ul>
 
 <ul class="navbar-nav ml-auto">
-
 <li class="nav-item">
 <a class="nav-link" data-widget="navbar-search" href="#" role="button">
 <i class="fas fa-search"></i>
@@ -44,7 +38,7 @@
 <div class="navbar-search-block">
 <form class="form-inline">
 <div class="input-group input-group-sm">
-<input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+<input class="form-control form-control-navbar" type="search" placeholder="Cari" aria-label="Cari">
 <div class="input-group-append">
 <button class="btn btn-navbar" type="submit">
 <i class="fas fa-search"></i>
@@ -65,7 +59,6 @@
 </a>
 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
 <a href="#" class="dropdown-item">
-
 <div class="media">
 <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
 <div class="media-body">
@@ -73,15 +66,13 @@
 Brad Diesel
 <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
 </h3>
-<p class="text-sm">Call me whenever you can...</p>
-<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+<p class="text-sm">Telepon saya kapan saja...</p>
+<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Jam Lalu</p>
 </div>
 </div>
-
 </a>
 <div class="dropdown-divider"></div>
 <a href="#" class="dropdown-item">
-
 <div class="media">
 <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
 <div class="media-body">
@@ -89,15 +80,13 @@ Brad Diesel
 John Pierce
 <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
 </h3>
-<p class="text-sm">I got your message bro</p>
-<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+<p class="text-sm">Saya sudah menerima pesanmu, bro</p>
+<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Jam Lalu</p>
 </div>
 </div>
-
 </a>
 <div class="dropdown-divider"></div>
 <a href="#" class="dropdown-item">
-
 <div class="media">
 <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
 <div class="media-body">
@@ -105,14 +94,13 @@ John Pierce
 Nora Silvester
 <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
 </h3>
-<p class="text-sm">The subject goes here</p>
-<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+<p class="text-sm">Pesan masuk di sini</p>
+<p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Jam Lalu</p>
 </div>
 </div>
-
 </a>
 <div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+<a href="#" class="dropdown-item dropdown-footer">Lihat Semua Pesan</a>
 </div>
 </li>
 
@@ -122,24 +110,24 @@ Nora Silvester
 <span class="badge badge-warning navbar-badge">15</span>
 </a>
 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-<span class="dropdown-item dropdown-header">15 Notifications</span>
+<span class="dropdown-item dropdown-header">15 Notifikasi</span>
 <div class="dropdown-divider"></div>
 <a href="#" class="dropdown-item">
-<i class="fas fa-envelope mr-2"></i> 4 new messages
-<span class="float-right text-muted text-sm">3 mins</span>
+<i class="fas fa-envelope mr-2"></i> 4 pesan baru
+<span class="float-right text-muted text-sm">3 menit</span>
 </a>
 <div class="dropdown-divider"></div>
 <a href="#" class="dropdown-item">
-<i class="fas fa-users mr-2"></i> 8 friend requests
-<span class="float-right text-muted text-sm">12 hours</span>
+<i class="fas fa-users mr-2"></i> 8 permintaan pertemanan
+<span class="float-right text-muted text-sm">12 jam</span>
 </a>
 <div class="dropdown-divider"></div>
 <a href="#" class="dropdown-item">
-<i class="fas fa-file mr-2"></i> 3 new reports
-<span class="float-right text-muted text-sm">2 days</span>
+<i class="fas fa-file mr-2"></i> 3 laporan baru
+<span class="float-right text-muted text-sm">2 hari</span>
 </a>
-<div class="dropdown-divider"></div>
-<a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+</div>
+<a href="#" class="dropdown-item dropdown-footer">Lihat Semua Notifikasi</a>
 </div>
 </li>
 <li class="nav-item">
@@ -155,16 +143,13 @@ Nora Silvester
 </ul>
 </nav>
 
-
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-
 <a href="index3.html" class="brand-link">
 <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
 <span class="brand-text font-weight-light">AdminLTE 3</span>
 </a>
 
 <div class="sidebar">
-
 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
 <div class="image">
 <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
@@ -176,7 +161,7 @@ Nora Silvester
 
 <div class="form-inline">
 <div class="input-group" data-widget="sidebar-search">
-<input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+<input class="form-control form-control-sidebar" type="search" placeholder="Cari" aria-label="Cari">
 <div class="input-group-append">
 <button class="btn btn-sidebar">
 <i class="fas fa-search fa-fw"></i>
@@ -187,7 +172,6 @@ Nora Silvester
 
 <nav class="mt-2">
 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
 <li class="nav-item menu-open">
 <a href="#" class="nav-link active">
 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -208,12 +192,10 @@ Dashboard
 <li class="nav-item">
 <a href="internet_home.php" class="nav-link">
 <i class="nav-icon fas fa-th"></i>
-<p>
-Internet Home
-</p>
+<p>Internet Home</p>
 </a>
 </li>
-<li class="nav-header">EXAMPLES</li>
+<li class="nav-header">CONTOH</li>
 <li class="nav-item">
 <a href="kalender.php" class="nav-link">
 <i class="nav-icon fas fa-calendar-alt"></i>
@@ -227,7 +209,7 @@ Kalender
 <a href="#" class="nav-link">
 <i class="nav-icon far fa-envelope"></i>
 <p>
-Mailbox
+Kotak Surat
 <i class="fas fa-angle-left right"></i>
 </p>
 </a>
@@ -241,129 +223,85 @@ Mailbox
 <li class="nav-item">
 <a href="pages/mailbox/compose.html" class="nav-link">
 <i class="far fa-circle nav-icon"></i>
-<p>Compose</p>
+<p>Buat Pesan</p>
 </a>
 </li>
 <li class="nav-item">
 <a href="pages/mailbox/read-mail.html" class="nav-link">
 <i class="far fa-circle nav-icon"></i>
-<p>Read</p>
+<p>Baca Surat</p>
 </a>
 </li>
 </ul>
 </li>
-
 <li class="nav-item">
 <a href="#" class="nav-link">
 <i class="nav-icon fas fa-search"></i>
 <p>
-Search
-<i class="fas fa-angle-left right"></i>
+Pencarian
 </p>
 </a>
-<ul class="nav nav-treeview">
-<li class="nav-item">
-<a href="pages/search/simple.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Simple Search</p>
-</a>
 </li>
-<li class="nav-item">
-<a href="pages/search/enhanced.html" class="nav-link">
-<i class="far fa-circle nav-icon"></i>
-<p>Enhanced</p>
-</a>
-</li>
-</ul>
-</li>
-<li class="nav-header">LABELS</li>
+<li class="nav-header">LABEL</li>
 <li class="nav-item">
 <a href="#" class="nav-link">
 <i class="nav-icon far fa-circle text-danger"></i>
-<p class="text">Important</p>
+<p class="text">Penting</p>
 </a>
 </li>
 <li class="nav-item">
 <a href="#" class="nav-link">
 <i class="nav-icon far fa-circle text-warning"></i>
-<p>Warning</p>
+<p>Perhatian</p>
 </a>
 </li>
 <li class="nav-item">
 <a href="#" class="nav-link">
 <i class="nav-icon far fa-circle text-info"></i>
-<p>Informational</p>
+<p>Informasi</p>
 </a>
 </li>
 </ul>
 </nav>
-
 </div>
-
 </aside>
 
+<div class="content-wrapper">
+<section class="content-header">
+<div class="container-fluid">
+<div class="row mb-2">
+<div class="col-sm-6">
+<h1>Data Pelanggan</h1>
+</div>
+</div>
+</div>
+</section>
 
-
-
-<aside class="control-sidebar control-sidebar-dark">
-
-</aside>
-
+<section class="content">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<div class="card">
+<div class="card-header">
+    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-tambah-pelanggan">Tambah Pelanggan</button>
+    <button class="btn btn-success btn-sm ml-2" data-toggle="modal" data-target="#modal-input-pembayaran">Input Pembayaran</button>
+</div>
+<div class="card-body">
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Id</th>
+<th>Nama</th>
+<th>No HP</th>
+<th>Alamat</th>
+<th>Paket Wifi</th>
+<th>Tanggal Aktivasi</th>
+<th>Aksi</th>
+<th>Riwayat Pembayaran</th>
+</tr>
+</thead>
+<tbody>
 <?php
-// Koneksi ke database
-$conn = new mysqli("localhost", "root", "", "pilarapp");
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
-
-// Logika untuk mengubah status
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['toggle_status'])) {
-    $id = $_POST['id'];
-    $current_status = $_POST['current_status'];
-    $new_status = ($current_status == 'Aktif') ? 'Tidak Aktif' : 'Aktif';
-
-    $sql_update = "UPDATE pelanggan SET status='$new_status' WHERE id='$id'";
-    if ($conn->query($sql_update) === TRUE) {
-        echo json_encode(['success' => true]);
-    } else {
-        echo json_encode(['success' => false, 'error' => $conn->error]);
-    }
-    exit();
-}
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Pelanggan</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body class="hold-transition sidebar-mini">
-<div class="wrapper">
-    <div class="container">
-        <h2>Data Pelanggan</h2>
-        <div class="mb-3">
-            <button class="btn btn-primary" data-toggle="modal" data-target="#tambahPelangganModal">Tambah Pelanggan</button>
-            <button class="btn btn-secondary" data-toggle="modal" data-target="#inputPembayaranModal">Input Pembayaran</button>
-        </div>
-        <table class="table table-bordered mt-3">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama Pelanggan</th>
-                    <th>No WA</th>
-                    <th>Alamat</th>
-                    <th>Paket Wifi</th>
-                    <th>Tanggal Aktivasi</th>
-                    <th>Status</th>
-                    <th>History Pembayaran</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
                 $conn = new mysqli("localhost", "root", "", "pilarapp");
 
                 if ($conn->connect_error) {
@@ -384,147 +322,150 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['toggle_status'])) {
                                 <td>" . $row['paket_wifi'] . "</td>
                                 <td>" . $row['tanggal_aktivasi'] . "</td>
                                 <td>
-                                    <button id='status-button-" . $row['id'] . "' 
+                                    <button id='status-button-" . $row['pelanggan_id'] . "' 
                                             class='btn $statusButtonClass' 
-                                            onclick='toggleStatus(" . $row['id'] . ", \"" . $row['status'] . "\")'>" . $row['status'] . "</button>
+                                            onclick='toggleStatus(" . $row['pelanggan_id'] . ", \"" . $row['status'] . "\")'>" . $row['status'] . "</button>
                                 </td>
-                                <td><a href='history_pembayaran.php?id=" . $row['id'] . "' class='btn btn-primary'>Klik di sini</a></td>
+                                <td><a href='history_pembayaran.php?pelanggan_id=" . $row['pelanggan_id'] . "' class='btn btn-primary'>Klik di sini</a></td>
                             </tr>";
                     }
                 }
                 $conn->close();
                 ?>
-            </tbody>
-        </table>
-    </div>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
 
-    <!-- Modal Tambah Pelanggan -->
-    <div class="modal fade" id="tambahPelangganModal" tabindex="-1" role="dialog" aria-labelledby="tambahPelangganLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="tambahPelangganLabel">Tambah Pelanggan</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form action="tambah_pelanggan.php" method="POST">
-                    <div class="modal-body">
+<footer class="main-footer">
+<div class="float-right d-none d-sm-inline-block">
+<b>Version</b> 3.2.0
+</div>
+</footer>
+
+<aside class="control-sidebar control-sidebar-dark">
+</aside>
+</div>
+
+<div class="modal fade" id="modal-tambah-pelanggan">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Tambah Pelanggan</h4>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form method="post" action="tambah_pelanggan.php">
+<div class="card-body">
+<div class="form-group">
+<label for="nama">Nama</label>
+<input type="text" class="form-control" id="nama_pelanggan" name="nama_pelanggan" placeholder="Masukkan Nama">
+</div>
+<div class="form-group">
+<label for="nomor_hp">Nomor HP</label>
+<input type="text" class="form-control" id="nomor_hp" name="nomor_hp" placeholder="Masukkan Nomor HP">
+</div>
+<div class="form-group">
+<label for="alamat">Alamat</label>
+<input type="text" class="form-control" id="alamat" name="alamat" placeholder="Masukkan Alamat">
+</div>
+<div class="form-group">
+<label for="paket_wifi">Paket Wifi</label>
+<input type="text" class="form-control" id="paket_wifi" name="paket_wifi" placeholder="Masukkan Paket Wifi">
+</div>
+<div class="form-group">
+<label for="tanggal_aktivasi">Tanggal Aktivasi</label>
+<input type="date" class="form-control" id="tanggal_aktivasi" name="tanggal_aktivasi">
+</div>
+</div>
+<div class="card-footer">
+<button type="submit" class="btn btn-primary">Simpan</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="modal-input-pembayaran">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Input Pembayaran</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="history_pembayaran.php" enctype="multipart/form-data">
+                    <div class="card-body">
                         <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" class="form-control" id="nama" name="nama" required>
+                            <input type="text" class="form-control" id="nama_pelanggan" name="nama_z" placeholder="Masukkan Nama">
                         </div>
                         <div class="form-group">
-                            <label for="no_wa">No WA</label>
-                            <input type="text" class="form-control" id="no_wa" name="no_wa" required>
+                            <label for="nominal_bayar">Jumlah Pembayaran</label>
+                            <input type="text" class="form-control" id="nominal_bayar" name="nominal_bayar" placeholder="Masukkan Jumlah Pembayaran">
                         </div>
                         <div class="form-group">
-                            <label for="alamat">Alamat</label>
-                            <input type="text" class="form-control" id="alamat" name="alamat" required>
+                            <label for="kurang_bayar">Sisa Tagihan</label>
+                            <input type="text" class="form-control" id="kurang_bayar" name="kurang_bayar" placeholder="Masukkan Sisa Tagihan">
                         </div>
                         <div class="form-group">
-                            <label for="paket_wifi">Paket Wifi</label>
-                            <input type="text" class="form-control" id="paket_wifi" name="paket_wifi" required>
+                            <label for="bukti_tf">Bukti Transfer</label>
+                            <input type="file" class="form-control" id="bukti_tf" name="bukti_tf">
                         </div>
                         <div class="form-group">
-                            <label for="tanggal_aktivasi">Tanggal Aktivasi</label>
-                            <input type="date" class="form-control" id="tanggal_aktivasi" name="tanggal_aktivasi" required>
+                            <label for="terbilang">Terbilang</label>
+                            <input type="text" class="form-control" id="terbilang" name="terbilang" placeholder="Masukkan Terbilang Pembayaran">
                         </div>
+                        <div class="form-group">
+                            <label for="untuk_pembayaran">Untuk Pembayaran</label>
+                            <input type="text" class="form-control" id="untuk_pembayaran" name="untuk_pembayaran" placeholder="Masukkan Untuk Pembayaran">
+                        </div>
+                        <input type="hidden" id="pelanggan_id" name="pelanggan_id">
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                    <div class="card-footer">
                         <button type="submit" class="btn btn-primary">Simpan</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-
-<!-- Modal Input Pembayaran -->
-<div class="modal fade" id="inputPembayaranModal" tabindex="-1" role="dialog" aria-labelledby="inputPembayaranLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="inputPembayaranLabel">Input Pembayaran</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form action="savepembayaran.php" method="POST" enctype="multipart/form-data">
-                <div class="modal-body">
-                    <input type="hidden" id="pelanggan_id" name="pelanggan_id">
-                    <div class="form-group">
-                        <label for="nama">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="nominalBayar">Nominal Bayar</label>
-                        <input type="number" class="form-control" id="nominalBayar" name="nominalBayar" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="kurangBayar">Kurang Bayar</label>
-                        <input type="number" class="form-control" id="kurangBayar" name="kurangBayar" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="buktiTf">Bukti Transfer</label>
-                        <input type="file" class="form-control" id="buktiTf" name="buktiTf" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="terbilang">Terbilang</label>
-                        <input type="text" class="form-control" id="terbilang" name="terbilang" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="untukPembayaran">Untuk Pembayaran</label>
-                        <input type="text" class="form-control" id="untukPembayaran" name="untukPembayaran" required>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                </div>
-            </form>
-        </div>
-    </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
+
+
+<script src="adminLTE/plugins/jquery/jquery.min.js"></script>
+<script src="adminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="adminLTE/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="adminLTE/dist/js/adminlte.js?v=3.2.0"></script>
+
 <script>
-function toggleStatus(userId, currentStatus) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "", true);
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            var response = JSON.parse(xhr.responseText);
-            if (response.success) {
-                var button = document.getElementById('status-button-' + userId);
-                if (currentStatus == 'Aktif') {
-                    button.classList.remove('btn-success');
-                    button.classList.add('btn-danger');
-                    button.textContent = 'Tidak Aktif';
-                    button.setAttribute('onclick', 'toggleStatus(' + userId + ', "Tidak Aktif")');
-                } else {
-                    button.classList.remove('btn-danger');
-                    button.classList.add('btn-success');
-                    button.textContent = 'Aktif';
-                    button.setAttribute('onclick', 'toggleStatus(' + userId + ', "Aktif")');
-                }
-            } else {
-                alert('Gagal mengubah status: ' + response.error);
-            }
-        }
-    };
-    xhr.send("toggle_status=1&id=" + userId + "&current_status=" + currentStatus);
+function showInputPembayaranModal(pelangganId) {
+    document.getElementById("pelanggan_id").value = pelangganId;
+    $('#modal-input-pembayaran').modal('show'); // Tampilkan modal
+}
+</script>
+
+<script>
+function toggleStatus(button, pelangganId) {
+button.classList.toggle("btn-success");
+button.classList.toggle("btn-danger");
+button.innerHTML = button.innerHTML === "Aktif" ? "Nonaktif" : "Aktif";
+// Lakukan panggilan AJAX untuk mengupdate status pelanggan di server menggunakan pelangganId
 }
 
-function setPelangganId(id, nama) {
-    document.getElementById('pelanggan_id').value = id;
-    document.getElementById('nama').value = nama;
+function setPelangganId(pelangganId) {
+document.getElementById("pelanggan_id").value = pelangganId;
 }
-
 </script>
 </body>
 </html>
