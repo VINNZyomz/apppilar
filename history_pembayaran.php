@@ -1,55 +1,37 @@
 <?php
-// Koneksi ke database
 $conn = new mysqli("localhost", "root", "", "pilarapp");
-
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
-// Mengambil ID pelanggan dari URL
-$pelanggan_id = isset($_GET['pelanggan_id']) ? intval($_GET['pelanggan_id']) : 0;
+$pelanggan_id = $_GET['id'];
 
-if ($pelanggan_id > 0) {
-    // Query untuk mendapatkan riwayat pembayaran berdasarkan ID pelanggan
-    $sql = "SELECT * FROM pembayaran WHERE pelanggan_id = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("i", $pelanggan_id);
-    $stmt->execute();
-    $result = $stmt->get_result();
+// Ambil nama pelanggan
+$sql_nama = "SELECT nama_pelanggan FROM pelanggan WHERE id='$pelanggan_id'";
+$result_nama = $conn->query($sql_nama);
+$nama_pelanggan = $result_nama->fetch_assoc()['nama_pelanggan'];
 
-    // Query untuk mendapatkan nama pelanggan berdasarkan ID pelanggan
-    $stmt_pelanggan = $conn->prepare("SELECT nama_pelanggan FROM pelanggan WHERE pelanggan_id = ?");
-    $stmt_pelanggan->bind_param("i", $pelanggan_id);
-    $stmt_pelanggan->execute();
-    $result_pelanggan = $stmt_pelanggan->get_result();
-    $pelanggan = $result_pelanggan->fetch_assoc();
-
-    $stmt->close();
-    $stmt_pelanggan->close();
-} else {
-    die("ID pelanggan tidak valid.");
-}
-
-$conn->close();
+// Ambil data pembayaran
+$sql = "SELECT * FROM pembayaran WHERE pelanggan_id='$pelanggan_id'";
+$result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History Pembayaran</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
+    <title>History Pembayaran - <?php echo $nama_pelanggan; ?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-<body class="hold-transition sidebar-mini">
-<div class="wrapper">
-    <div class="container">
-        <h2>History Pembayaran - <?php echo htmlspecialchars($pelanggan['nama_pelanggan'] ?? 'Pelanggan Tidak Ditemukan'); ?></h2>
+<body>
+    <div class="container mt-5">
+        <h2>History Pembayaran - <?php echo $nama_pelanggan; ?></h2>
         <table class="table table-bordered mt-3">
             <thead>
                 <tr>
                     <th>Tanggal Pembayaran</th>
+                    <th>Nama Pelanggan</th>
                     <th>Nominal Bayar</th>
                     <th>Kurang Bayar</th>
                     <th>Bukti Transfer</th>
@@ -59,38 +41,27 @@ $conn->close();
             </thead>
             <tbody>
                 <?php
-                if (isset($result) && $result->num_rows > 0) {
+                if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
-                        $bukti_transfer = htmlspecialchars($row['bukti_tf']);
-                        $allowed_extensions = ['jpg', 'jpeg', 'png', 'pdf'];
-                        $file_extension = strtolower(pathinfo($bukti_transfer, PATHINFO_EXTENSION));
-
                         echo "<tr>
-                                <td>" . htmlspecialchars($row['tanggal_pembayaran']) . "</td>
-                                <td>" . htmlspecialchars($row['nominal_bayar']) . "</td>
-                                <td>" . htmlspecialchars($row['kurang_bayar']) . "</td>
-                                <td>";
-                        if (in_array($file_extension, $allowed_extensions)) {
-                            echo "<a href='uploads/" . $bukti_transfer . "' target='_blank'>Lihat Bukti</a>";
-                        } else {
-                            echo "Format file tidak didukung.";
-                        }
-                        echo "</td>
-                                <td>" . htmlspecialchars($row['terbilang']) . "</td>
-                                <td>" . htmlspecialchars($row['untuk_pembayaran']) . "</td>
+                                <td>" . $row['tanggal_pembayaran'] . "</td>
+                                <td>" . $nama_pelanggan . "</td>
+                                <td>" . $row['nominal_bayar'] . "</td>
+                                <td>" . $row['kurang_bayar'] . "</td>
+                                <td><a href='uploads/" . $row['bukti_tf'] . "' target='_blank'>Lihat Bukti</a></td>
+                                <td>" . $row['terbilang'] . "</td>
+                                <td>" . $row['untuk_pembayaran'] . "</td>
                             </tr>";
                     }
-                } else {
-                    echo "<tr><td colspan='6'>Tidak ada riwayat pembayaran</td></tr>";
                 }
                 ?>
             </tbody>
         </table>
-        <a href="internet_home.php" class="btn btn-secondary">Kembali</a>
+        <a href="javascript:history.back()" class="btn btn-secondary">Kembali</a>
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
 </body>
 </html>
+
+<?php
+$conn->close();
+?>

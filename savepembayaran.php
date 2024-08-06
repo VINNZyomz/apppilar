@@ -30,48 +30,38 @@
             <tbody>
             <?php
 $conn = new mysqli("localhost", "root", "", "pilarapp");
-
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $pelanggan_id = $_POST['pelanggan_id'];
+    $tanggal_pembayaran = $_POST['tanggalPembayaran'];
     $nominal_bayar = $_POST['nominalBayar'];
     $kurang_bayar = $_POST['kurangBayar'];
     $terbilang = $_POST['terbilang'];
     $untuk_pembayaran = $_POST['untukPembayaran'];
+    
+    // Upload file bukti transfer
     $bukti_tf = $_FILES['buktiTf']['name'];
     $target_dir = "uploads/";
-    $target_file = $target_dir . basename($bukti_tf);
-
-    // Debugging
-    echo "Data yang diterima: <br>";
-    echo "Pelanggan ID: $pelanggan_id <br>";
-    echo "Nominal Bayar: $nominal_bayar <br>";
-    echo "Kurang Bayar: $kurang_bayar <br>";
-    echo "Terbilang: $terbilang <br>";
-    echo "Untuk Pembayaran: $untuk_pembayaran <br>";
-    echo "Bukti Transfer: $bukti_tf <br>";
-
-    if (move_uploaded_file($_FILES['buktiTf']['tmp_name'], $target_file)) {
-        $sql = "INSERT INTO pembayaran (pelanggan_id, nominal_bayar, kurang_bayar, bukti_tf, terbilang, untuk_pembayaran) 
-                VALUES ('$pelanggan_id', '$nominal_bayar', '$kurang_bayar', '$bukti_tf', '$terbilang', '$untuk_pembayaran')";
-
+    $target_file = $target_dir . basename($_FILES["buktiTf"]["name"]);
+    
+    if (move_uploaded_file($_FILES["buktiTf"]["tmp_name"], $target_file)) {
+        $sql = "INSERT INTO pembayaran (pelanggan_id, tanggal_pembayaran, nominal_bayar, kurang_bayar, terbilang, untuk_pembayaran, bukti_tf) 
+                VALUES ('$pelanggan_id', '$tanggal_pembayaran', '$nominal_bayar', '$kurang_bayar', '$terbilang', '$untuk_pembayaran', '$bukti_tf')";
+                
         if ($conn->query($sql) === TRUE) {
-            echo "Data pembayaran berhasil disimpan";
+            echo json_encode(['success' => true]);
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            echo json_encode(['success' => false, 'error' => $conn->error]);
         }
     } else {
-        echo "Gagal mengunggah bukti transfer.";
+        echo json_encode(['success' => false, 'error' => 'Gagal mengupload file']);
     }
+    exit();
 }
-
-$conn->close();
 ?>
-
-
 
             </tbody>
         </table>
